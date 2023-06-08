@@ -135,8 +135,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "",
-    facebook: "https://facebook.com",
+    github: "https://github.com/oshij",
+    instagram: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
 };
