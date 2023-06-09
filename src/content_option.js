@@ -49,16 +49,12 @@ const skills = [{
 ];
 
 const services = [{
-        title: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web-Apps (Full Stack)",
+        description: "",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Mobile Apps (Flutter)",
+        description: "",
     },
 ];
 
@@ -128,10 +124,9 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "oshijtrivedi@gmail.com",
     YOUR_FONE: "9131128379",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_09amdal",
+    YOUR_TEMPLATE_ID: "template_olyprip",
+    YOUR_USER_ID: "HCDrT7KP5UPLLjfDP",
 };
 
 const socialprofils = {
