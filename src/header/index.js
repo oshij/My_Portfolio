@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(false);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -15,52 +15,119 @@ const Headermain = () => {
 
   return (
     <>
-      <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
-          <div className="d-flex align-items-center">
-          <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
-          
-          </div>
-        </div>
+      <header className="hero-anime">
+        <div className="navigation-wrap bg-light start-header start-style">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <nav className="navbar navbar-expand-md navbar-light">
+                  <a
+                    className="navbar-brand"
+                    href="https://front.codes/"
+                    target="_blank"
+                  >
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <div className="bg__menu h-100">
-            <div className="menu__wrapper">
-              <div className="menu__container p-3">
-                <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
-                  </li>
-                </ul>
+                  </a>
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    className="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul className="navbar-nav ml-auto py-4 py-md-0">
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          data-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Home
+                        </a>
+                        <div className="dropdown-menu">
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </div>
+                      </li>
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a className="nav-link" href="#">
+                          Portfolio
+                        </a>
+                      </li>
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a className="nav-link" href="#">
+                          Agency
+                        </a>
+                      </li>
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          data-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Services
+                        </a>
+                        <div className="dropdown-menu">
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </div>
+                      </li>
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a className="nav-link" href="#">
+                          Journal
+                        </a>
+                      </li>
+                      <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a className="nav-link" href="#">
+                          Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
-            </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
-          </div>
         </div>
       </header>
-      
+      <div className="br-top"></div>
+      <div className="br-bottom"></div>
+      <div className="br-left"></div>
+      <div className="br-right"></div>
     </>
   );
 };
